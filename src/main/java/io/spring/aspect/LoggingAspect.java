@@ -51,6 +51,8 @@ public class LoggingAspect {
 	@Pointcut("execution(* draw())")
 	public void draw() {}
 	
+	@Pointcut("execution(* get*())")
+	public void allGetters() {}
 	
 	
 }
